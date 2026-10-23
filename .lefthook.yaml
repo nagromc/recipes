@@ -1,3 +1,5 @@
 pre-commit:
   commands:
-    run: gram check {staged_files}
+    check-recipes:
+      glob: "*.gram"
+      run: gram check --strict {staged_files}
