@@ -1,0 +1,3 @@
+pre-commit:
+  commands:
+    run: gram check {staged_files}

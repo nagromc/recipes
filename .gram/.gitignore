@@ -1,0 +1,3 @@
+# Prevent committing sensitive API keys if used in config
+*.key
+.env*
