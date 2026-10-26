@@ -1,0 +1,38 @@
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Install Gram CLI
+        id: install-env
+        run: npm install --global @gram-lang/cli
+
+      - name: Build static files
+        id: build
+        run: ls *.gram | xargs -L1 gram export --format html
+
+      - name: Copy assets to target dir
+        id: copy-assets
+        run: cp *.html _site/
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,3 +1,4 @@
 *.md
 *.html
 !README.md
+!_site/*
