@@ -19,5 +19,11 @@ These recipes are written in the [Gram language](https://gram-lang.org) using Fr
 ## Compiling recipes
 
 ```shell
-gram view crepes.gram
+mise run build
+```
+
+or
+
+```shell
+mise run clean ::: build
 ```
