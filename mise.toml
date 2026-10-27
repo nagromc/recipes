@@ -1,3 +1,4 @@
 [tools]
+node = "24"
 "npm:@gram-lang/cli" = "1"
 "aqua:evilmartians/lefthook" = "2"
