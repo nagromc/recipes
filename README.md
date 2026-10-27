@@ -4,17 +4,11 @@ These recipes are written in the [Gram language](https://gram-lang.org) using Fr
 
 ## Requirements
 
-1. Install Gram CLI either following the instructions on the [official website](https://gram-lang.org), or using [mise-en-place](https://mise.jdx.dev):
+Install Gram CLI either following the instructions on the [official website](https://gram-lang.org), or using [mise-en-place](https://mise.jdx.dev):
 
-    ```shell
-    mise install
-    ```
-
-2. Install Git hooks:
-
-    ```shell
-    lefthook install
-    ```
+```shell
+mise install
+```
 
 ## Compiling recipes
 

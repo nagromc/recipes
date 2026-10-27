@@ -3,6 +3,9 @@ node = "24"
 "npm:@gram-lang/cli" = { version = "1", allow_low_downloads = true }
 "aqua:evilmartians/lefthook" = "2"
 
+[hooks]
+postinstall = "lefthook install"
+
 [tasks.build]
 alias = "default"
 description = "Generate the recipes in Markdown format"
