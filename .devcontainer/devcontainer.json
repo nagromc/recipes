@@ -7,6 +7,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "gram-lang.gram-lang",
         "hverlin.mise-vscode"
       ]
     }
