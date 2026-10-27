@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "gram-lang.gram-lang"
+    "gram-lang.gram-lang",
+    "hverlin.mise-vscode"
   ]
 }
