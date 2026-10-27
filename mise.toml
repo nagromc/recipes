@@ -1,4 +1,4 @@
 [tools]
 node = "24"
-"npm:@gram-lang/cli" = "1"
+"npm:@gram-lang/cli" = { version = "1", allow_low_downloads = true }
 "aqua:evilmartians/lefthook" = "2"
