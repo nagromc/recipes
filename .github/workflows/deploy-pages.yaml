@@ -19,7 +19,7 @@ jobs:
 
       - name: Copy assets to target dir
         id: copy-assets
-        run: cp *.html _site/
+        run: mkdir _site/ && cp *.html _site/
 
       - name: Generate recipe index
         run: node scripts/generate-index.mjs _site
