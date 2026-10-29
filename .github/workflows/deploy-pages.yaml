@@ -21,6 +21,9 @@ jobs:
         id: copy-assets
         run: cp *.html _site/
 
+      - name: Generate recipe index
+        run: node scripts/generate-index.mjs _site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
 
